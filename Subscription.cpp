@@ -25,16 +25,21 @@ int main()
         {
             cout << "Your subscription has expired" << endl;
         }
-        else {
-        cout << "Your subscription expires in " << dayUntilExpiry << endl;
-        cout << "Renew now and save 10%!" << endl;
+        else
+        {
+            cout << "Your subscription expires in " << dayUntilExpiry << endl;
+            cout << "Renew now and save 10%!" << endl;
         }
-
-
     }
     else if (dayUntilExpiry <= 11)
     {
-        
-        cout << "You have an active subscription." << endl;
+        if (dayUntilExpiry <= 10)
+        {
+            cout << "Your subscription will expire soon. Renew Now!" << endl;
+        }
+        else 
+        {
+            cout << "You have an active subscription." << endl;
+        }
     }
 }
