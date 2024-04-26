@@ -49,10 +49,15 @@ string capitalizeSecondLetter(const string& str) {
                 result += word.substr(0,1) + char (toupper(word[1])) + word.substr(2) + " ";
                 word = "";
             }
+            
         } else {
             word += c;
         }
     }
+    if (!word.empty()) {
+                result += word.substr(0,1) + char (toupper(word[1])) + word.substr(2);
+                
+            }
     return result;
 }
 
