@@ -1,23 +1,23 @@
 #include <iostream>
-
+using namespace std;
 int main() {
     int inputValue;
 
     while (true) {
-        std::cout << "Enter an integer value between 5 and 10: ";
-        if (std::cin >> inputValue) {
+        cout << "Enter an integer value between 5 and 10: ";
+        if (cin >> inputValue) {
             if (inputValue >= 5 && inputValue <= 10) {
                 break;
             } else {
-                std::cout << "Sorry you entered " << inputValue <<". Please enter an integer value between 5 and 10." << std::endl;
+                cout << "Sorry you entered " << inputValue <<". Please enter an integer value between 5 and 10." << endl;
             }
         } else {
-            std::cout << "Invalid input. Please enter a valid integer value." << std::endl;
+            cout << "Invalid input. Please enter a valid integer value." << endl;
            
         }
     }
 
-    std::cout << "Your input value (" << inputValue << ") has been accepted." << std::endl;
+    cout << "Your input value (" << inputValue << ") has been accepted." << endl;
 
     return 0;
 }
