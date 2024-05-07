@@ -62,5 +62,16 @@ namespace shapes
         height = 0;
     }
     }
-
-}
+    class Circle{
+        private:
+        float radius;
+    }
+        void SetRadius(float r)
+    {
+        radius = r;
+    }
+    float GetRadius()
+    {
+        return radius;
+    }
+};
