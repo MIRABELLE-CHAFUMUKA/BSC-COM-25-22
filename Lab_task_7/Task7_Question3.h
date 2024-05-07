@@ -28,4 +28,39 @@ namespace shapes
     ~Square(){
         length = 0;
     }
+
+    //Creation of Triangle class
+    class Triangle{
+        private:
+        float base;
+        float height;
+        public:
+        //Constructor
+        Triangle(){
+            base = 0;
+            height= 0;
+        }
+        void SetBase(float b)
+    {
+        base = b;
+    }
+    float GetBase()
+    {
+        return base;
+    }
+    void SetHeight(float h)
+    {
+        height = h;
+    }
+    float GetHeight()
+    {
+        return height;
+    }
+    //Destructor
+    ~Triangle(){
+        base = 0;
+        height = 0;
+    }
+    }
+
 }
