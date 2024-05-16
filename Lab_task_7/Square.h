@@ -15,6 +15,7 @@ namespace shapes
         {
             length = 0;
         }
+        //Overload
         Square(float length) : length(length)
     {
     }
@@ -27,7 +28,7 @@ namespace shapes
     {
         return length;
     }
-    float areaOfSquare(float length)
+    float areaOfSquare()
     {
         float area = length * length;
         return area;
