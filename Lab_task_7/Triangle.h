@@ -34,10 +34,9 @@ namespace shapes{
     {
         return height;
     }
-    float areaOfTriangle(float area)
+    float areaOfTriangle(float base, float height)
     {
-        
-        area = 0.5 * base * height;
+        float area = 0.5 * base * height;
         return area;
     }
     };
